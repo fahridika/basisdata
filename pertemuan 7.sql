@@ -12,11 +12,11 @@ CREATE TABLE mhspolines (
 #data MAHASISWA
 INSERT INTO mhspolines (nim , nama , jurusan, progdi, sum_ukt)
     VALUES
-        ('33420401', 'Ahmad', 'elektro', '1', '1', '1'),
-        ('33420402', 'Logika', 'elektro', '1', '2', '1'),
-        ('33420403', 'Basic', 'elektro', '1', '2', '1'),
-        ('33420404', ' Data', 'akuntasi', '2', '2', '1'),
-        ('33420405', 'Pascal', 'akuntasi', '2', '2', '1'),
-        ('33420406', 'Dasar', 'akuntasi', '2', '1', '1'),
-        ('33420407', 'Karier', 'sipil', '5', '3', '1'),
-        ('33420408', 'Akhirun', 'sipil', '6', '3', '1');
+        ('33420401', 'Ahmad', 'elektro', 'a1', '6000000'),
+        ('33420402', 'Logika', 'elektro', 'a2', '6500000'),
+        ('33420403', 'Basic', 'elektro', 'a3', '5000000'),
+        ('33420404', 'Data', 'akuntasi', 'b1', '7000000'),
+        ('33420405', 'Pascal', 'akuntasi', 'b2', '8000000'),
+        ('33420406', 'Dasar', 'akuntasi', 'b3', '5500000'),
+        ('33420407', 'Karier', 'sipil', 'c1', '7000000'),
+        ('33420408', 'Akhirun', 'sipil', 'c2', '7500000');
