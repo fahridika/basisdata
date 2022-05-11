@@ -1,8 +1,11 @@
-us
+use mahasiswa;
+#1.	sebelum melakukan ke lima printah tersebut, anda sudah memiliki atau membuat sebuah 
+#table yang berisi data mahasiswa berupa nim, nama, jurusan, progdi dan sumbangan uang kuliah.
+
 CREATE TABLE mkuliah (
-    kode_kul CHAR(7) PRIMARY KEY UNIQUE NOT NULL,
-    nama_kul CHAR(20) NOT NULL,
-    sks DECIMAL(2) NOT NULL,
-    smt_tawar CHAR(1),
+    nim CHAR(7) PRIMARY KEY UNIQUE NOT NULL,
+    nama CHAR(20) NOT NULL,
+    jurusan (2) NOT NULL,
+    progdi CHAR(1),
     klp_kul CHAR(1) DEFAULT '1',
-    progdi CHAR(1)
+    
