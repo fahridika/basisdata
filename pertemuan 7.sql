@@ -26,3 +26,20 @@ SELECT * FROM mhspolines WHERE jurusan='elektro';
 
 #2.	Hitung jumlah mahasiswa Teknik Elektro?
 SELECT count(jurusan) FROM mhspolines WHERE jurusan='elektro';
+#3. a. Ada berapa Jurusan di Polines dan berapa jumlah mahasiswanya per jurusan?
+Ada berapa Jurusan di Polines
+SELECT count(distinct jurusan) as jumlah_jurusan from mhspolines;
+berapa jumlah mahasiswanya per jurusan
+SELECT jurusan, count(*) FROM mhspolines group by jurusan;
+#4.	Ada berapa Progdi di jurusan teknik elektro dan berapa jumlah mahasiswanya per Progdi?
+Ada berapa Progdi di jurusan teknik elektro
+SELECT count(distinct progdi) as jumlah_jurusan_elektro from mhspolines where jurusan = 'elektro';
+berapa jumlah mahasiswanya per Progdi
+SELECT progdi, count(*) as jumlah_mahasiswa FROM mhspolines group by progdi;
+#5.	Berikan Diskon/potongan Sumbangan uang kuliah (A=10%,B=20%,C=30%)
+SELECT nama, sum_ukt, CASE
+    WHEN jurusan = 'elektro' then sum_ukt-(sum_ukt*10/100) 
+    WHEN jurusan = 'akuntasi' then sum_ukt-(sum_ukt*20/100) 
+    WHEN jurusan = 'sipil' then sum_ukt-(sum_ukt*30/100) 
+    END as sumbangan
+    from mhspolines;
