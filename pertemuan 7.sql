@@ -7,5 +7,5 @@ CREATE TABLE mkuliah (
     nama CHAR(20) NOT NULL,
     jurusan (2) NOT NULL,
     progdi CHAR(1),
-    klp_kul CHAR(1) DEFAULT '1',
-    
+    sum_ukt CHAR(9) DEFAULT '1'
+    );
