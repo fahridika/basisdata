@@ -21,5 +21,8 @@ INSERT INTO mhspolines (nim , nama , jurusan, progdi, sum_ukt)
         ('3342047', 'Karier', 'sipil', 'c1', '7000000'),
         ('3342048', 'Akhirun', 'sipil', 'c2', '7500000');
 
-#menampilkan data jurusan elektro
+# 1. menampilkan data jurusan elektro
 SELECT * FROM mhspolines WHERE jurusan='elektro';
+
+#2.	Hitung jumlah mahasiswa Teknik Elektro?
+SELECT count(jurusan) FROM mhspolines WHERE jurusan='elektro';
