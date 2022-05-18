@@ -39,3 +39,20 @@ INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok)
          INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok) VALUES ('88888', 'Kopi 200gr', '5', 'bungkus', '5500', '2020-01-25', 'PT.Hong Kuan');
          INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok) VALUES ('99999', 'Songkok Turki', '50', 'buah', '55000', '2025-01-20', 'CV.Murni');
          
+         
+        #ilmu tambaha Membuat Primary dan foreign key pada Tabel yang sudah dibuat
+         #menghapus primary key yang sudah dibuat
+         ALTER TABLE barang20415 drop primary key;
+         
+         
+         #4.	Bagaimana cara untuk menjadikan field Kode sebagai primary key ?
+         ALTER TABLE barang20415 ADD PRIMARY KEY(kode);
+         
+         
+         #5.	Bagaimana mengubah field Harga menjadi Harga Jual ?
+         ALTER TABLE barang20415 change harga harga_jual char(11);
+         
+         # 6.	Tuliskan perintah untuk mengubah data TglKadaluarsa menjadi 2024/12/30 untuk barang yang kodenya = 44444 !
+         update barang20415 set tgl_kadalua = '2024-12-30' where kode = '44444';
+         
+         
