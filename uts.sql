@@ -15,7 +15,7 @@ CREATE TABLE barang20415 (
     tgl_kadalua DATE,
     pemasok CHAR(18)
 );
-#3.	Tuliskan perintah untuk menambahkan data barang seperti tabel soal no 2 !
+#3.	Tuliskan perintah untuk menambahkan data barang seperti tabel soal no 2!
 INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok)
     VALUES
         ('11111', 'Mixer Yamaha A12X', '20', 'buah', '550000', '2025-01-01', 'PT.Mulia'),
