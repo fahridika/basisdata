@@ -18,7 +18,7 @@ CREATE TABLE barang20415 (
 #3.	Tuliskan perintah untuk menambahkan data barang seperti tabel soal no 2 !
 INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok)
     VALUES
-        ('11111', 'Mixer Yamaha A12X', '20', 'buah', '55000', '2025-01-01', 'PT.Mulia'),
+        ('11111', 'Mixer Yamaha A12X', '20', 'buah', '550000', '2025-01-01', 'PT.Mulia'),
         ('22222', 'Lampu LED 4W', '50', 'buah', '5000', '2024-05-05', 'PT.Maju'),
         ('33333', 'Pensil HBC', '100', 'buah', '1000', '2023-04-08', 'CV.Jaya'),
         ('44444', 'Buku Swan 50', '200', 'buah', '5500', '2024-11-22', 'CV.Jaya),
