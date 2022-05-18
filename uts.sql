@@ -9,7 +9,7 @@ create database toko20415;
 CREATE TABLE barang20415 (
     kode CHAR(7) PRIMARY KEY UNIQUE NOT NULL,
     nama CHAR(20) NOT NULL,
-    stock INT(2) NOT NULL,
+    stock INT(4) NOT NULL,
     satuan CHAR(10) NOT NULL,
     harga INT(10) ,
     tgl_kadalua DATE,
