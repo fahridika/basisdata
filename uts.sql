@@ -2,6 +2,7 @@
 Perintah
 mysql -u root
 # membuat database
+
 create database toko20415;
 
 #2.	Tuliskan perintah untuk membuat tabel (nama tabel : BarangXXXXX, dimana XXXX adalah 5 digit nim terakhir Anda) sesuai dengan tampilan berikut :
@@ -16,6 +17,7 @@ CREATE TABLE barang20415 (
     pemasok CHAR(18)
 );
 #3.	Tuliskan perintah untuk menambahkan data barang seperti tabel soal no 2!
+
 INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok)
     VALUES
         ('11111', 'Mixer Yamaha A12X', '20', 'buah', '550000', '2025-01-01', 'PT.Mulia'),
@@ -28,7 +30,7 @@ INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok)
         ('88888', 'Kopi 200gr', '5', 'bungkus', '5000', '2020-01-25', 'PT. Hang Kuan'),
         ('99999', 'Songkok Turki', '50', 'buah', '55000', '2025-01-20', 'CV. Murni')
          ;
-  #gunakan ini
+  #gunakan ini jika yang diaatas error tidak mau run
          INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok) VALUES ('11111', 'Mixer Yamaha A12X', '20', 'buah', '550000', '2025-01-01', 'PT.Mulia');
          INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok) VALUES ('22222', 'Lampu LED 4W', '50', 'buah', '5000', '2024-05-05', 'PT.Maju');
          INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok) VALUES ('33333', 'Pensil HBC', '100', 'buah', '1000', '2023-04-08', 'CV.Jaya');
