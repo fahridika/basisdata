@@ -7,7 +7,7 @@ create database toko20415;
 #2.	Tuliskan perintah untuk membuat tabel (nama tabel : BarangXXXXX, dimana XXXX adalah 5 digit nim terakhir Anda) sesuai dengan tampilan berikut :
 
 CREATE TABLE barang20415 (
-    kode CHAR(7) PRIMARY KEY UNIQUE NOT NULL,
+    kode CHAR(7)  NOT NULL,
     nama CHAR(20) NOT NULL,
     stock INT(4) NOT NULL,
     satuan CHAR(10) NOT NULL,
@@ -54,5 +54,16 @@ INSERT INTO barang20415 (kode, nama, stock, satuan, harga, tgl_kadalua, pemasok)
          
          # 6.	Tuliskan perintah untuk mengubah data TglKadaluarsa menjadi 2024/12/30 untuk barang yang kodenya = 44444 !
          update barang20415 set tgl_kadalua = '2024-12-30' where kode = '44444';
+         
+         #7.	Tuliskan perintah untuk menampilkan data barang yang terdiri field kode, nama, stock, harga, dan variabel baru jumlah. Dimana jumlah merupakan perkalian stock dan harga jual !
+         
+         SELECT kode, nama, stock, harga_jual, stock * harga_jual  as jumlah from barang20415;
+         # 8.	Tuliskan perintah untuk menampilkan data barang yang akan kadaluarsa paling lama 100 hari dari sekarang !
+         select * from barang20415 where tgl_kadalua between '2022-05-17' and '2022/08/25';
+         # 9.	Apa perintah untuk menampilkan field kode, nama, dan stock yang dipasok oleh CV. Segar yang stock barangnya kurang dari 10 dan data apa yang akan tertampil !
+         select kode, nama, stock from barang20415 where pemasok = 'CV.Segar' and stock < 10;
+         
+         #10.	Apa perintah untuk menampilkan total stock barang dari masing-masing pemasok !
+         SELECT pemasok, sum(stock) FROM barang20415 group by pemasok;
          
          
