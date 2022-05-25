@@ -1,3 +1,6 @@
+#Membuat database
+Create Database ProduksiFilm33420415;
+
 Create Table pemeran (
 kode_pem Char(5) Primary Key Not Null,
 nama Char(20) Not Null,
