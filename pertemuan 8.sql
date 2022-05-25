@@ -122,3 +122,11 @@ where p.kode_pem = m.kode_pem;
 7)
 select p.kode_pem, p.nama, m.kode_pem, m.kode_film
 from pemeran p natural join mainsbg m;
+
+8. 
+select t.prov, p.nama_kota as kota, p.penduduk
+from tugas_populasi p inner join tugas_daftar_provinsi t
+where ibukota =nama_kota;
+Select tugas_daftar_provinsi.prov, tugas_populasi.nama_kota as kota, tugas_populasi.pen
+From tugas_daftar_provinsi, tugas_populasi 
+where ibukota = nama_kota;
