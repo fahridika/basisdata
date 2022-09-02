@@ -35,4 +35,19 @@ nama_anak1 CHAR (25),
 nama_anak2 CHAR (25),
 nama_anak3 CHAR (25));
 
+CREATE TABLE cuti(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_id INT,
+status_cuti CHAR(10),
+approval_1 CHAR(30),
+aprroval_2 CHAR(30),
+tgl_join_kar DATE,
+tgl_awal_cuti DATE,
+tgl_akhir_cuti DATE,
+hak_cuti_t INT(2),
+hak_cuti_i INT(2),
+tlh_ambil_cuti INT(2),
+saldo_cuti INT(2),
+keterangan TEXT);
+
 
